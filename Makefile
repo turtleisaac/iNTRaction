@@ -15,7 +15,7 @@ endif
 ####################### Tools #########################
 ARMIPS_SOURCE = armips
 ARMIPS = $(ARMIPS_SOURCE)/build/armips
-PYTHON = python3
+PYTHON = python3 # you may have to change this based on your OS
 ####################### Seting ########################
 OUTPUT = build/output.bin
 ####################### Build #########################
@@ -27,7 +27,7 @@ compile: # add new lines matching the following format for any files you add to 
 	$(ARMIPS) codes/example.s
 
 decompile: # add new lines matching the following format for any files you add to be decompiled
-	$(PYTHON) decompile.py -i example.txt -o decompiled.s
+	$(PYTHON) decompile.py -i codes/example.txt -o codes/decompiled.s
 
 build_tools:
 	@rm -r -f armips

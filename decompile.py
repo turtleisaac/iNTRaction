@@ -23,9 +23,9 @@ def main(argv):
 
 
 def decompile(infile, outfile):
-    with open(os.getcwd() + '/include/functions.json', 'r') as f:
+    with open(os.path.join(os.getcwd(), 'include', 'functions.json'), 'r') as f:
         functions = json.load(f)
-    with open(os.getcwd() + infile, 'r') as f:
+    with open(os.path.join(os.getcwd(), infile), 'r') as f:
         text = f.read()
 
     codes = re.split('[^\n]+:\n', text)
@@ -53,10 +53,9 @@ def decompile(infile, outfile):
             if output is None:
                 output = locate_function(nibble_functions, line)
             decompiled.append(output)
-            print(output)
         cheats[cheat] = decompiled
 
-    with open(os.getcwd() + outfile, 'w') as f:
+    with open(os.path.join(os.getcwd(), outfile), 'w') as f:
         f.write('.nds\n.thumb\n\n.include \"include/macros.s\"\n\n.create \"codes.txt\",0\n\n')
         for cheat in cheats:
             f.write('AR_CODE \"' + cheat + '\"\n')
