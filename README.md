@@ -16,5 +16,5 @@ Nintendo DS Action Replay Code Compiler/Decompiler
 * NTRaction script function names can be found in `include/macros.s`
 * Further information on functions, including what each does, can be found [here](http://uk.codejunkies.com/support_downloads/Trainer-Toolkit-for-Nintendo-DS-User-Manual.pdf).
 * Included with this repo is the file `codes/example.s`, which contains a few AR codes in NTRaction format. By default, running ```make compile``` will output ```codes/example.txt``` which contains the compiled AR codes.
-* By default, running ```make decompile``` will decompile ```codes/example.txt``` into NTRaction scripts in the file ```codes/decompiled.txt```. This Makefile rule **will** fail by default if you have not yet ran ```make compile```.
+* By default, running ```make decompile``` will decompile ```codes/example.txt``` into NTRaction scripts in the file ```codes/decompiled.s```. This Makefile rule **will** fail by default if you have not yet ran ```make compile```.
 * `directMemoryWrite (EXXXXXXX NNNNNNNN VVVVVVVV VVVVVVVV)` is currently not supported by the NTRaction compiler/decompiler. Please be patient while I figure out how the heck it functions.
