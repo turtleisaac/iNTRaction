@@ -1,0 +1,114 @@
+{
+  "ByteIdentifiers": {
+    "D0": {
+      "usage": "endIf",
+      "params": []
+    },
+    "D1": {
+      "usage": "endRepeat",
+      "params": []
+    },
+    "D2": {
+      "usage": "endCode",
+      "params": []
+    },
+    "D3": {
+      "usage": "setOffsetRegister %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D4": {
+      "usage": "addToStored %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D5": {
+      "usage": "setStoredRegister %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D6": {
+      "usage": "do32BitStoreIncrement %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D7": {
+      "usage": "do16BitStoreIncrement %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D8": {
+      "usage": "do8BitStoreIncrement %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "D9": {
+      "usage": "do32BitLoadStoredFromAddress %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "DA": {
+      "usage": "do16BitLoadStoredFromAddress %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "DB": {
+      "usage": "do8BitLoadStoredFromAddress %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "DC": {
+      "usage": "addToOffset %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    }
+  },
+  "NibbleIdentifiers": {
+    "0": {
+      "usage": "do32BitWrite %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "1": {
+      "usage": "do16BitWrite %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "2": {
+      "usage": "do8BitWrite %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "3": {
+      "usage": "do32BitIfLessThan %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "4": {
+      "usage": "do32BitIfGreaterThan %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "5": {
+      "usage": "do32BitIfEqual %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "6": {
+      "usage": "do32BitIfNotEqual %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    },
+    "7": {
+      "usage": "do16BitIfLessThan %s, %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[a-f||A-F||0-9]{4}$", "[ ][a-f||A-F||0-9]{4}"]
+    },
+    "8": {
+      "usage": "do16BitIfGreaterThan %s, %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[a-f||A-F||0-9]{4}$", "[ ][a-f||A-F||0-9]{4}"]
+    },
+    "9": {
+      "usage": "do16BitIfEqual %s, %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[a-f||A-F||0-9]{4}$", "[ ][a-f||A-F||0-9]{4}"]
+    },
+    "A": {
+      "usage": "do16BitIfNotEqual %s, %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[a-f||A-F||0-9]{4}$", "[ ][a-f||A-F||0-9]{4}"]
+    },
+    "B": {
+      "usage": "loadOffsetRegister %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]"]
+    },
+    "C": {
+      "usage": "repeatOperation %s",
+      "params": ["[ ][a-f||A-F||0-9]{8}"]
+    },
+    "F": {
+      "usage": "memoryCopy %s, %s",
+      "params": ["[a-f||A-F||0-9]{7}[ ]", "[ ][a-f||A-F||0-9]{8}"]
+    }
+  }
+}

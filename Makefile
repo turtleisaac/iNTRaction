@@ -23,11 +23,11 @@ OUTPUT = build/output.bin
 default:
 	@echo "Usage: make <compile/decompile>"
 
-compile:
+compile: # add new lines matching the following format for any files you add to be compiled
 	$(ARMIPS) codes/example.s
 
-decompile:
-	@echo moo
+decompile: # add new lines matching the following format for any files you add to be decompiled
+	$(PYTHON) decompile.py -i example.txt -o decompiled.s
 
 build_tools:
 	@rm -r -f armips

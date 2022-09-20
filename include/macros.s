@@ -160,7 +160,7 @@
 	.ascii tohex(address, 8), 0xA
 .endmacro
 
-//DC000000 YYYYYYYY
+//DC?????? YYYYYYYY
 .macro addToOffset,value
 	.ascii toHex(0xDC << 24, 8), " "
 	.ascii tohex(value, 8), 0xA
